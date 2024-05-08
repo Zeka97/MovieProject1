@@ -32,7 +32,7 @@ const Header = () => {
           })}
           onClick={() => setIsMovieSelected(true)}
         >
-          Top 10 Movies
+          Top Rated Movies
         </button>
         <button
           className={classNames("rounded-8 text-white border px-24 py-14", {
@@ -41,7 +41,7 @@ const Header = () => {
           })}
           onClick={() => setIsMovieSelected(false)}
         >
-          TV Shows
+          Top rated TV Shows
         </button>
       </div>
       <div className="flex justify-center gap-8 text-[#757474]">
