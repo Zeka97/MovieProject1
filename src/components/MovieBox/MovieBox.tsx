@@ -5,7 +5,14 @@ import { MovieBoxProps } from "../../Interfaces/Interfaces";
 const MovieBox = ({ movie, id, isMoviesSelected }: MovieBoxProps) => {
   const navigate = useNavigate();
 
-  const route = isMoviesSelected ? "movie" : "tv";
+  const route =
+    movie.media_type == undefined
+      ? isMoviesSelected
+        ? "movie"
+        : "tv"
+      : movie.media_type == "movie"
+      ? "movie"
+      : "tv";
 
   return (
     <div

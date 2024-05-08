@@ -43,6 +43,7 @@ export interface Movie {
   video: false;
   vote_average: number | string;
   vote_count: number | string;
+  media_type?: string | undefined;
 }
 
 export interface MovieOrSeriesProps {

@@ -37,6 +37,8 @@ const Home = () => {
     return () => clearTimeout(timeout);
   }, [search.length]);
 
+  console.log(searchResult);
+
   return (
     <>
       {isMoviesSelected && search.length < 3 && (
